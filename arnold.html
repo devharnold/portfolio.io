@@ -4,63 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>arnold</title>
+    <title>DEV ARNOLD</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bck-image.jpg') no-repeat center center fixed;
+            background-size: cover; /* Adjust the background image size */
+        }
+        .navbar {
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #0056b3 !important; /* Blue navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important; /* Make text white */
+        }
+        header {
+            background-color: #0056b3; /* Blue header */
+            color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .big-card {
+            width: 75%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f8ff; /* Light blue card background */
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .profile-photo img {
+            width: 150px; /* Adjust the photo size */
+            border-radius: 50%; /* Circular photo */
+            margin-bottom: 20px;
+        }
+        .contact-card, .card-link {
+            margin: 10px;
+        }
+        .card-link a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .card-link {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+        }
+        footer {
+            text-align: center;
+            background-color: #0056b3; /* Blue footer */
+            color: #fff; /* White text */
+            padding: 0;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white; /* White background */
-  }
-  .navbar {
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #0056b3 !important; /* Blue navbar */
-  }
-  .navbar-brand, .nav-link {
-    color: white !important; /* Make text white */
-  }
-  header {
-    background-color: #0056b3; /* Blue header */
-    color: #fff;
-    padding: 20px;
-    border-radius: 6px;
-  }
-  header h1 {
-    margin: 0;
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .big-card {
-    width: 75%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f8ff; /* Light blue card background */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-  }
-  footer {
-    text-align: center;
-    background-color: #0056b3; /* Blue footer */
-    color: #fff; /* White text */
-    padding: 0;
-    width: 100%;
-    border-radius: 5px;
-  }
-</style>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="arnold.html"><b>Home</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -68,38 +89,39 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="about.html"><b>About</b><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html"><b>Contact</b></a>
+              <a class="nav-link" href="about.html"><b>About Me</b></a>
             </li>
           </ul>
         </div>
     </nav>
+
     <div class="big-card">
         <header>
-          <h1>DEV ARNOLD</h1>
-          <nav>
-            <ul>
-              <li><a href="about.html">aboutme</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
+            <h1>DEV ARNOLD</h1>
         </header>
+        <nav>
+            <div class="card-link">
+                <a href="about.html">Projects</a>
+            </div>
+            <div class="card-link">
+                <a href="contact.html">Let's Connect</a>
+            </div>
+        </nav>
         <div class="profile-photo">
-          <img src="flask.png" alt="My photo">
+            <img src="" alt="My photo">
         </div>
         <section>
-            <h2>AboutMe</h2>
             <p>Hello there &#x1F44B. I am Henry Arnold, a young lad who is passionate about Software Engineering and is very interested in taking Software Engineering to the next level.<br>
             I am a software engineer with expertise in writing backend code using different frameworks and languages like Python (Flask, Django) and JavaScript (Node.js). Besides, I am able to also handle relational databases like MySQL and PostgreSQL.<br>
             Additionally, I am proficient in writing and developing RESTful APIs and GraphQL using Python and JavaScript.</p>
             <p>Solving problems is my big area of concern as it has helped me learn different patterns since I started off my Software Engineering journey up to date.</p>
         </section>        
     </div>
+
     <footer>
-        <p>&copy; 2024 Arnold.</p>
+        <p>&copy; 2024 Arnold. All rights reserved.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
