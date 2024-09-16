@@ -63,13 +63,37 @@
             text-decoration: none;
             color: #0056b3;
             font-weight: bold;
+            display: inline-block;
+            border-radius: 8px;
+            padding: 5px 15px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
         }
         .card-link {
+            margin: 10px 0;
             border-radius: 10px;
             border: 1px solid #ddd;
-            padding: 15px;
+            padding: 10px 20px;
             margin-bottom: 10px;
             background-color: #f8f9fa;
+            display: inline-block;
+        }
+        .card-link a:hover {
+            background-color: #004494;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .project-card .btn {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
         footer {
             text-align: center;
@@ -96,34 +120,46 @@
     </nav>
     <div class="big-card">
         <header>
-            <h1>DEV ARNOLD</h1>
+            <h1>My Work</h1>
         </header>
             <nav>
                 <div class="card-link">
-                    <a href="arnold.html">Home</a>
+                    <a href="arnold.html">Home &#127968;</a>
                 </div>
                 <div class="card-link">
-                    <a href="contact.html">Let's Connect</a>
+                    <a href="contact.html">Let's Connect &#128515;</a>
                 </div>
             </nav>
         <section>
             <h5>I have devoted my time and tried to work on these different projects to try and showcase my skills and expertise,<br>
             creating solutions to problems and trying to be innovative at some points</h5>
             <h2>Projects... </h2>
-            <div class="project">
-                <h3>Travel Assistant</h3>
-                <p>This project was developed using Node.js
-                </p>
-                <p>This was my first ever backend development project where I had a chance to collaborate with a partner in doing system design, writing the codebase,<br>
-                establishing databases and writing RESTful APIs. It is a project that helped me learn how good code is written,work within the given time to complete tasks,
-                and most importantly testing the different units within your written code.
+            <div class="project-card card">
+                <img src="path-to-image.jpg" alt="Travel Assistant Landing Page" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Travel Assistant</h3>
+                    <p class="card-text">This project was developed using Node.js.</p>
+                    <p class="card-text">
+                        I developed the backend of this project where I had a chance to collaborate with a partner in doing system design, writing the codebase,
+                        establishing databases, and writing RESTful APIs. It is a project that helped me learn how to write backend JS code, work within the given time to complete tasks,
+                        and most importantly test the different units within the written code.
+                    </p>
+                    <a href="https://github.com/devharnold/ha-ta" target="_blank" class="btn btn-primary">View Repository</a>
+                </div>
             </div>
-            <div class="project">
-                <h3></h3>
-                <p></p>
-                <p></p>
+            <div class="project-card card">
+                <img src="path-to-image.jpg" alt="Blog Post App" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Blogs Post App</h3>
+                    <p class="card-text">This project was developed using Django</p>
+                    <p class="card-text">
+                        I developed the backend of this project where I had a chance to collaborate with a partner in doing system design, writing the codebase,
+                        establishing databases, and writing API Views. It is a project that helped me learn how to work with Django and the Django-Rest Framework,
+                        and most importantly test the different units within the written code.
+                    </p>
+                    <a href="https://github.com/devharnold/erl" target="_blank" class="btn btn-primary">View Repository</a>
+                </div>
             </div>
-
             <footer>
                 <p>&copy; 2024 Arnold.</p>
             </footer>

@@ -46,6 +46,7 @@
             width: 75%;
             margin: 20px auto;
             padding: 20px;
+            background: url('') no-repeat center center fixed;
             background-color: #f0f8ff; /* Light blue card background */
             border: 2px solid #ccc;
             border-radius: 10px;
@@ -62,13 +63,25 @@
             text-decoration: none;
             color: #0056b3;
             font-weight: bold;
+            display: inline-block;
+            border-radius: 8px;
+            padding: 5px 15px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
         }
         .card-link {
+            margin: 10px 0;
             border-radius: 10px;
             border: 1px solid #ddd;
-            padding: 15px;
+            padding: 10px 20px;
             margin-bottom: 10px;
             background-color: #f8f9fa;
+            display: inline-block;
+        }
+        .card-link a:hover {
+            background-color: #004494;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
@@ -97,30 +110,29 @@
 
     <div class="big-card">
         <header>
-            <h1>DEV ARNOLD</h1>
+            <h1>Welcome Aboard!</h1>
         </header>
         <nav>
             <div class="card-link">
                 <a href="about.html">Projects</a>
             </div>
             <div class="card-link">
-                <a href="contact.html">Let's Connect</a>
+                <a href="contact.html">Let's Connect &#128515;</a>
             </div>
         </nav>
         <div class="profile-photo">
             <img src="" alt="My photo">
         </div>
         <section>
-            <p>Hello there &#x1F44B. I am Henry Arnold, a young lad who is passionate about Software Engineering and is very interested in taking Software Engineering to the next level.<br>
+            <p>Hello there &#x1F44B. I am Henry Arnold, a Backend Software Development Engineer who is passionate about Software Engineering and is very interested in taking Software Engineering to the next level.<br>
             I am a software engineer with expertise in writing backend code using different frameworks and languages like Python (Flask, Django) and JavaScript (Node.js). Besides, I am able to also handle relational databases like MySQL and PostgreSQL.<br>
             Additionally, I am proficient in writing and developing RESTful APIs and GraphQL using Python and JavaScript.</p>
             <p>Solving problems is my big area of concern as it has helped me learn different patterns since I started off my Software Engineering journey up to date.</p>
-        </section>        
+        </section>
+        <footer>
+            <p>&copy; 2024 Arnold.</p>
+        </footer>    
     </div>
-
-    <footer>
-        <p>&copy; 2024 Arnold. All rights reserved.</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

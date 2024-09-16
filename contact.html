@@ -7,71 +7,79 @@
     <title>Contact Info</title>
 </head>
 <style>
-  body {
+    body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('bck-image.jpg') no-repeat center center fixed; /* Adjust the path to your image */
-    background-size: cover; /* Ensures the image covers the entire page */
-    color: #333; /* Sets a default text color */
+    background: url('bck-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
   }
+
   .navbar {
     border-radius: 10px;
     margin: 10px;
-    background-color: #0056b3 !important; /* Blue navbar */
+    background-color: #0056b3 !important;
   }
+
   .navbar-brand, .nav-link {
-    color: white !important; /* Make text white */
+    color: white !important;
   }
+
+  .big-card, .contact-card {
+    width: 75%; /* Same width */
+    margin: 20px auto; /* Centers the card */
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adds shadow */
+  }
+
+  .contact-card {
+    background-color: #f8f9fa;
+  }
+
   header {
-    background-color: #0056b3; /* Blue header */
+    background-color: #0056b3;
     color: #fff;
     padding: 20px;
     border-radius: 6px;
+    text-align: center;
   }
-  header h1 {
+
+  header h2 {
     margin: 0;
   }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .big-card {
-    width: 75%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f8ff; /* Light blue card background */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-  }
-  .contact-card {
-    width: 75%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-  }
-  .social-links a {
-    color: #0056b3;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 1.5em;
-  }
+  .card-link a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 8px;
+            padding: 5px 15px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+        .card-link {
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            display: inline-block;
+        }
+        .card-link a:hover {
+            background-color: #004494;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        }
   footer {
     text-align: center;
-    background-color: #0056b3; /* Blue footer */
-    color: #fff; /* White text */
+    background-color: #0056b3;
+    color: white;
     padding: 0;
-    width: 100%;
     border-radius: 5px;
   }
 </style>
@@ -84,7 +92,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="about.html"><b>About Me</b></a>
+              <a class="nav-link" href="about.html"><b>Projects</b></a>
             </li>
           </ul>
         </div>
@@ -96,6 +104,14 @@
             <h2>Contact Me</h2>
         </header>
         <section>
+          <nav>
+            <div class="card-link">
+                <a href="arnold.html">Home &#127968;</a>
+            </div>
+            <div class="card-link">
+                <a href="about.html">Projects </a>
+            </div>
+        </nav>
             <p>If you’d like to get in touch, feel free to reach out via email or connect with me on social media.</p>
 
             <!-- Email Contact -->
@@ -122,23 +138,23 @@
 
             <!-- Social Media Links -->
             <div class="social-links">
-                <h4>Connect with Me</h4>
-                <a href="https://github.com/devharnold" target="_blank">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/arnold-henry-ah01/" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://x.com/ibuildepicshit" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/30/000000/twitter.png" alt="Twitter">
-                </a>
-            </div>
+              <h4>Connect with Me</h4>
+              <a href="https://github.com/devharnold" target="_blank">
+                  <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" class="social-icon">
+              </a>
+              <a href="https://www.linkedin.com/in/arnold-henry-ah01/" target="_blank">
+                  <img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn" class="social-icon">
+              </a>
+              <a href="https://x.com/ibuildepicshit" target="_blank">
+                  <img src="https://img.icons8.com/ios-filled/30/000000/twitter.png" alt="Twitter" class="social-icon">
+              </a>
+          </div>
+          
         </section>
+        <footer>
+          <p>&copy; 2024 Arnold.</p>
+      </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Arnold.</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
